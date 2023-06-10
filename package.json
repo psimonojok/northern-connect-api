@@ -12,6 +12,7 @@
   "license": "ISC",
   "dependencies": {
     "@types/debug": "^4.1.8",
+    "@types/morgan": "^1.9.4",
     "bcryptjs": "^2.4.3",
     "config": "^3.3.9",
     "debug": "^4.3.4",
@@ -21,6 +22,7 @@
     "gravatar": "^1.8.2",
     "jsonwebtoken": "^9.0.0",
     "mongoose": "^7.2.3",
+    "morgan": "^1.10.0",
     "request": "^2.88.2"
   },
   "devDependencies": {
