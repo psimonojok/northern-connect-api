@@ -15,6 +15,7 @@ connectDatabase().then()
 
 
 app.use(morgan('dev'))
+app.use(express.json())
 
 app.use('/', webRouter)
 app.use('/api', apiRouter)

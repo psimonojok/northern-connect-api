@@ -8,7 +8,7 @@ export interface IUser {
     date: Date
 }
 
-const userScheme = new Schema<IUser>({
+export const userScheme = new Schema<IUser>({
     name: {
         type: String,
         required: true,
@@ -23,7 +23,7 @@ const userScheme = new Schema<IUser>({
         required: true
     },
     avatar: {
-        type: String
+        type: String,
     },
     date: {
         type: Date,
