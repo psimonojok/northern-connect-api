@@ -5,7 +5,7 @@ import debug from "../../../utils/debug";
 
 const handleUserValidation: (handler: Handler) => Handler[] = (handler: Handler) => [
     body('name').notEmpty().withMessage('Name is required'),
-    body('email').notEmpty().withMessage('Name is required')
+    body('email').notEmpty().withMessage('Email is required')
         .isEmail().withMessage('email must be valid'),
     body('password').isLength({min: 6})
         .withMessage('Please enter a password with 6 or more characters'),

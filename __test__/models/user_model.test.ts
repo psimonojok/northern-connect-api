@@ -24,9 +24,6 @@ describe('User Schema', () => {
 
     test('should have a field named (email) of type StringScheme, required and unique', () => {
         const email = userScheme.path('email')
-
-        console.log(email)
-
         expect(email).toBeInstanceOf(Schema.Types.String)
         expect(email.isRequired).toBeTruthy()
         expect(email.validators.length).toStrictEqual(1)
